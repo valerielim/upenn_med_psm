@@ -2,9 +2,7 @@
 
 *This is one of the best, short and sweet introductions to the subject of Propensity Score Matching. I found it clearer than the UPenn Course so I've included it here too.*
 
-[![Best Propensity Score Matching Explanation on Youtube](https://img.youtube.com/vi/ACVyPp1Fy6Y&t/0.jpg)](https://www.youtube.com/watch?v=ACVyPp1Fy6Y)
-
-# [![Everything Is AWESOME](https://img.youtube.com/vi/StTqXEQ2l-Y/0.jpg)](https://www.youtube.com/watch?v=StTqXEQ2l-Y "Everything Is AWESOME")
+[![Best Propensity Score Matching Explanation on Youtube](https://github.com/valerielim/upenn_med_psm/blob/main/Lectures/psm_youtube.png)](https://www.youtube.com/watch?v=ACVyPp1Fy6Y)
 
 ### Application
 
