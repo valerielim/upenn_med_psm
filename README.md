@@ -1,2 +1,23 @@
 # upenn_med_psm
-Code Walkthrough of UPenn Medical's Propensity Score Modelling course 
+
+* Start date: 10 October 2022
+* End date: *In progress*
+
+Code Walkthrough of UPenn Medical's Propensity Score Modelling course. I aim to complete the course assignments in R, then challenge myself further by redoing them with Python, and go further by applying these techniques to a new dataset outside the course.
+
+### Lectures
+
+* Lecture 1.1 - Notations, Potential Outcomes, Counterfactuals
+* Lecture 1.2 - Hypothetical Interventions, FPCI, Subpopulations
+* Lecture 1.3 - Assumptions, Stratification Calculation
+* Lecture 1.4 - Active Comparator and Incident User Design
+
+### Quizes
+
+* Quiz 1.1
+* Quiz 1.2
+* Quiz 1.3 -- graded
+
+### Graded Assignments
+
+tbc 
