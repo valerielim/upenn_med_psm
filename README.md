@@ -11,13 +11,14 @@ Code Walkthrough of UPenn Medical's Propensity Score Modelling course. I aim to 
 * Lecture 1.2 - Hypothetical Interventions, FPCI, Subpopulations
 * Lecture 1.3 - Assumptions, Stratification Calculation
 * Lecture 1.4 - Active Comparator and Incident User Design
-* Lecture 2.1 - Confounds, Directed Acrylic Graphs (DAGs)
+* Lecture 2.1 - Confounds, DAGs, D-separation, Joint probability Distribution
 
 ### Quizes
 
 * Quiz 1.1
 * Quiz 1.2
 * Quiz 1.3 -- graded
+* Quiz 2.1
 
 ### Graded Assignments
 

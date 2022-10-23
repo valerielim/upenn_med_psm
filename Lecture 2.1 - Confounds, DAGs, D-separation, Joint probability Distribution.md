@@ -1,4 +1,4 @@
-# Lecture 2.1 - Confounds, Directed Acrylic Graphs (DAGs)
+# Lecture 2.1 - Confounds, DAGs, D-separation, Joint probability Distribution
 
 **Recap**
 
@@ -106,9 +106,9 @@ Instead, if you start with a particular DAG, you would be able to imply more spe
 Types:
 
 1. Fork (A --> B, and A --> C)
-* Chain (A --> B --> C) 
-* Inverted fork (B --> A and C --> A) 
-* Collider (in an inverted fork, when two paths flow to the same node, that node is a collider)
+1. Chain (A --> B --> C) 
+1. Inverted fork (B --> A and C --> A) 
+1. Collider (in an inverted fork, when two paths flow to the same node, that node is a collider)
 
 Drawing out the DAG and identifying types of paths, helps us identify what variables to control for during causal inference. 
 
@@ -170,11 +170,7 @@ Examples:
 
 **Why does this matter? How is this used in PSM?**
 
-Remember, ignorability is about having independent assignment of treatment conditions, in a way that doesn't affect the outcomes.
-
-For that assumption to be valid, there should be conditional independence between treatment variables A and the outcome variables Y. 
-
-Here, we use DAGs to map and identify which set of nodes can D-separate two other groups of nodes in order to find opportunities to create conditional independence. 
+Remember, ignorability is about having independent assignment of treatment conditions, in a way that doesn't affect the outcomes. For that assumption to be valid, there should be *conditional independence between treatment variables A and the outcome variables Y*. Here, we use DAGs to map and identify which set of nodes can D-separate two other groups of nodes in order to find opportunities to create conditional independence. 
 
 We also use DAGs to make sure ignorability holds true.
 
