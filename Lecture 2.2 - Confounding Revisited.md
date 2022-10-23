@@ -1,4 +1,4 @@
-# Lecture - 2.2 Confounding Revisited 
+# Lecture - 2.2 Confounding Revisited, Disjunctive Cause Criterion 
 
 Reminder: Confounders affect both the treatment and the outcome. 
 

@@ -24,6 +24,7 @@ Analysis is typically conducted in two phases where in phase I, the probability 
 * Lecture 1.3 - Assumptions, Stratification Calculation
 * Lecture 1.4 - Active Comparator and Incident User Design
 * Lecture 2.1 - Confounds, DAGs, D-separation, Joint probability Distribution
+* Lecture 2.2 - Confounding Revisited, Disjunctive Cause Criterion
 
 ### Quizes
 
