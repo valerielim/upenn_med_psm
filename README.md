@@ -32,7 +32,8 @@ Analysis is typically conducted in two phases where in phase I, the probability 
 * Quiz 1.2
 * Quiz 1.3 -- graded
 * Quiz 2.1
+* Quiz 2.2 -- graded
 
 ### Graded Assignments
 
-tbc 
+tbc
