@@ -25,7 +25,7 @@ Analysis is typically conducted in two phases where in phase I, the probability 
 * Lecture 1.4 - Active Comparator and Incident User Design
 * Lecture 2.1 - Confounds, DAGs, D-separation, Joint probability Distribution
 * Lecture 2.2 - Confounding Revisited, Disjunctive Cause Criterion
-* Lecture 3.1 - Matching Techniques
+* Lecture 3.1 - Matching Techniques, Mahalanobis distance
 
 ### Quizes
 
@@ -34,6 +34,7 @@ Analysis is typically conducted in two phases where in phase I, the probability 
 * Quiz 1.3 -- graded
 * Quiz 2.1
 * Quiz 2.2 -- graded
+* Quiz 3.1 
 
 ### Graded Assignments
 
