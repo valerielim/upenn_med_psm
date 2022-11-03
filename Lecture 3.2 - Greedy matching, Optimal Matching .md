@@ -105,10 +105,30 @@ Description:
 
 See screenshot for formula. 
 
+Advantages:
 
+* Does not depend on sample size
+* The absolute value of SMD is useful for reporting so you'll have to calculate it anyway
+* Calculate SMD for each variable you match on 
+* Guidelines:
+	* `<0.1` indicates good balance
+	* `0.1 - 0.2` indicates adequate balance 
+	* `>0.2` indicates serious imbalance, not acceptable
 
+### Table1 
 
+*A generic term for a summary table.*
 
+![alt text](https://github.com/valerielim/upenn_med_psm/raw/main/images/image_8.png)
+
+Description above: 
+
+* The left-hand "unmatched" table shows the summary of samples and covariate distribution within the control (No-RHC) group, treatment (RHC) group, and their Standardised Mean Difference (SMD). 
+* The right-hand "matched" table shows the same distribution after matching. 
+* Note that the sample sizes are now equal, and the distribution of covariates are almost equal too. 
+* Finally, the SMD is within healthy range for all except Age.
+
+Note: Plotting a line graph of Covariates' SMD scores, grouped by matched/ unmatched, is very helpful to show how matching is effective in cases where you have multiple variables. Remember to draw a cut-off line at SMD = 0.1 (because less than 0.1 is ideal!)
 
 
 
