@@ -74,4 +74,6 @@ What's the metric of closeness, or a good match? Two options for now:
 * Mahalanobis distance
 * Robus Mahalanobis distance 
 
-![alt text](https://github.com/valerielim/upenn_med_psm/blob/main/image_5.png?raw=true)
+*From the lecture notes*
+
+![alt text](https://github.com/valerielim/upenn_med_psm/raw/main/images/image_5.png)
