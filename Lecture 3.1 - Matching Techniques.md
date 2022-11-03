@@ -77,3 +77,28 @@ What's the metric of closeness, or a good match? Two options for now:
 *From the lecture notes*
 
 ![alt text](https://github.com/valerielim/upenn_med_psm/raw/main/images/image_5.png)
+
+* Xi - Xj = get a vector of the differences between subject i, j
+* T = transpose vector
+* S = invert (power to -1 aka invert)
+
+> take diference in age, square the difference, divide by the variance, then take the square root. 
+
+![alt text](https://github.com/valerielim/upenn_med_psm/raw/main/images/image_6.png)
+
+In the above image, let's say there are 6 possible control subjects that would match with the treated subject. We find the M-distance score for all of them, and pick the lowest score (lowest = closest = best). 
+
+### Robust Mahalanobis distance
+
+This deals with outliers where outliers can ceate a great distance and mess up the averages. In this case, we use **ranks**. So the person with the youngest might get a rank of one, and the oldest would get the rank of, if there are 100 people, then they get ranked 100. This helps if the values and range are extreme between the largest and second largest score. The ranks also put everything on the same scale. 
+
+### Alternatives
+
+You can also use software to use a propensity score, then do a **distance match** on the propensity score (topic covered in another course - just fyi that it exists). 
+
+You can also apply **greedy matching** (nearest-neighbour approach). This has the advantage of being computationally fast. 
+
+There's also **optimal matching**, but this is computationally demanding on larger datasets. 
+
+
+
