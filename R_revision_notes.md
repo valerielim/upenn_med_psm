@@ -57,7 +57,6 @@ Print
 1.000000  1.310345  1.620690  1.931034  2.241379 [6]  2.551724  2.862069  3.172414  3.482759  3.793103[11]  4.103448  4.413793  4.724138  5.034483  5.344828[16]  5.655172  5.965517  6.275862  6.586207  6.896552[21]  7.206897  7.517241  7.827586  8.137931  8.448276[26]  8.758621  9.068966  9.379310  9.689655 10.000000
 ```
 
-
 Replicate 
 
 * To repeat print a number, use `rep` like `rep(3, times = 5)` 
@@ -67,6 +66,8 @@ Replicate
 ```
 > rep(3, times = 5)
  3 3 3 3 3 
+> rep(NA, 1000)
+ NA NA NA .... NA NA NA NA 
 > rep(c(1,2,3), times = 5)
  1 2 3 1 2 3 1 2 3 1 2 3 1 2 3 
 > rep(c(1,2,3), each = 5)
@@ -94,3 +95,95 @@ String vectors
 
 > paste(LETTERS, 1:4, sep = "-") "A-1" "B-2" "C-3" "D-4" "E-1" "F-2" "G-3" "H-4" "I-1" "J-2" "K-3" "L-4" "M-1" "N-2" "O-3" "P-4" "Q-1" "R-2" "S-3" "T-4" "U-1" "V-2" "W-3" "X-4" "Y-1" "Z-2" 
 ```
+
+Random sample 
+
+* Draw *n* random samples from given vector 
+
+```
+> sample(LETTERS, 5) 
+ A I L S U 
+> sample(1:10, 2) 
+ 2  6 
+```
+
+### Missing Values 
+
+* `NA` is missing value
+* Use `is.na()` on vectors to print bool of whether elements are NA or not 
+* Use `sum(vector_variable)` on vectors to print number of NA present 
+* `NaN` is Not a Number, like infinity 
+
+### Subsetting Vectors
+
+To remove missing NAs and subset all numbers >0: 
+
+```
+x[!is.na(x) & x>0]
+```
+To subset the 3rd, 5th, 7th number in a vector: 
+
+```
+x[c(3, 5, 7]
+```
+To subset every element except the 2nd and 10th in a vector:
+
+```
+x[c(-2, -10)] or 
+x[-c(2, 10)]
+```
+To select a named element "foo":
+
+```
+> x <- c(foo = 11, bar =2, norf = NA)
+> x["foo"]
+ 11 
+> x[c("foo", "norf")]
+ foo  norf
+ 11   NA 
+
+```
+### Matrix & Dataframes 
+
+* Matrixes can only have one single data type; dataframes can have different datatypes
+
+Create a simple matrix with numbers 1-20, 4 rows, 5 columns:
+
+```
+matrix(data = 1:20, nrow = 4, ncol = 5)
+     [,1] [,2] [,3] [,4] [,5][1,]    1    5    9   13   17[2,]    2    6   10   14   18[3,]    3    7   11   15   19[4,]    4    8   12   16   20
+```
+
+Create a simple dataframe with column names: 
+
+```
+data.frame(c("Bill", "Gina", "Kelly", "Sean"), 
+	matrix(data = 1:20, nrow = 4, ncol = 5,
+	)
+cnames <- c("patient", "age", "weight", "bp", "rating", "test")
+colnames(my_data) <- cnames
+
+  patient age weight bp rating test1    Bill   1      5  9     13   172    Gina   2      6 10     14   183   Kelly   3      7 11     15   194    Sean   4      8 12     16   20
+```
+
+### Rest of notes 
+
+Logic 
+
+* `&&` evaluates only the first member of the vector 
+* `&` evaluates the entire set of the vector under AND 
+* `==` means equal 
+* `!=` means not equal 
+* `||` evaluates only the first member of a vector
+* `|` evaluates the entire set of the vector under OR 
+* `xor` means Exclusive OR, that one argument evaluates to TRUE and the other to FALSE 
+* Order: All **AND** operators are evaluated before **OR** operators
+
+When evaluating across uneven vectors: 
+
+```
+> TRUE | c(TRUE, FALSE, FALSE) TRUE TRUE TRUE
+ 
+> TRUE || c(TRUE, FALSE, FALSE) TRUE   -- note: only first item was evaluated
+```
+
